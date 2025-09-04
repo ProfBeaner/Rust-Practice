@@ -1,3 +1,23 @@
+use std::io;
+
+fn main_function() -> String {
+    println!("Annete Montoya, are you EXTREMELY stinky? (y/n): ");
+    let mut choice = String::new();
+    io::stdin()
+        .read_line(&mut choice)
+        .expect("Failed to read line");
+    choice.trim().to_lowercase()
+}
+
 fn main() {
-	println!("Hello, world!");
+    // Loop infinitely until a 'break' statement is executed.
+    loop {
+        let choice = main_function();
+        if choice == "y" {
+            println!("Correct! :)");
+            break; // Exit the loop when the answer is correct.
+        } else {
+            println!("Incorrect. Try again. :(");
+        }
+    }
 }
