@@ -1,6 +1,6 @@
 use std::io;
 
-fn main_function() -> String {
+    fn frstfn() -> String {
     println!("Bryce Snow, are you EXTREMELY OBESE? (y/n): ");
     let mut choice = String::new();
     io::stdin()
@@ -9,10 +9,10 @@ fn main_function() -> String {
     choice.trim().to_lowercase()
 }
 
-fn main() {
+    fn scnd_fn() {
     // Loop infinitely until a 'break' statement is executed.
     loop {
-        let choice = main_function();
+        let choice = frstfn();
         if choice == "y" {
             println!("Correct! :)");
             break; // Exit the loop when the answer is correct.
