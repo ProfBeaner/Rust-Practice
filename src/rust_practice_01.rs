@@ -1,6 +1,6 @@
 use std::io;
 
-    fn frstfn() -> String {
+fn frstfn() -> String {
     println!("Bryce Snow, are you EXTREMELY OBESE? (y/n): ");
     let mut choice = String::new();
     io::stdin()
@@ -9,7 +9,7 @@ use std::io;
     choice.trim().to_lowercase()
 }
 
-    fn scnd_fn() {
+fn scnd_fn() {
     // Loop infinitely until a 'break' statement is executed.
     loop {
         let choice = frstfn();
@@ -21,4 +21,3 @@ use std::io;
         }
     }
 }
-
