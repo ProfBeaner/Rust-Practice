@@ -1,5 +1,9 @@
 use std::io;
 
+pub fn totlfn1() {
+    frstfn();
+    scndfn();
+}
 fn frstfn() -> String {
     println!("Bryce Snow, are you EXTREMELY OBESE? (y/n): ");
     let mut choice = String::new();
@@ -9,7 +13,7 @@ fn frstfn() -> String {
     choice.trim().to_lowercase()
 }
 
-fn scnd_fn() {
+fn scndfn() {
     // Loop infinitely until a 'break' statement is executed.
     loop {
         let choice = frstfn();
