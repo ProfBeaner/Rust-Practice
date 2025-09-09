@@ -20,6 +20,6 @@ fn scndfn() { //second function (creates loop)
         }
     }
 }
-pub fn totlfn1() { //total function 
-        scndfn();
+pub fn totlfn1() { //total function
+scndfn();
 }
