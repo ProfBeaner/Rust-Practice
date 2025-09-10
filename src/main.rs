@@ -1,5 +1,5 @@
-pub mod rust_practice_01;
+pub mod rust_practice_02;
 
 fn main() {
-    rust_practice_01::totlfn1();
+    rust_practice_02::totlfn2();
 }
