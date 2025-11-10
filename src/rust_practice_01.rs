@@ -1,7 +1,7 @@
 use std::io; //imports input/output toolbox from standard library
 
 fn frstfn() -> String { //returns function value as string
-    println!("Bryce Snow, are you EXTREMELY OBESE? (y/n): "); //prints string literal into terminal 
+    println!("Danny To, are you EXTREMELY OBESE? (y/n): "); //prints string literal into terminal 
     let mut choice = String::new(); //creates mutable string variable that is empty
     io::stdin() //imports standard input function from io toolbox 
         .read_line(&mut choice) //.read_line reads user input and stores it in "choice" variable
