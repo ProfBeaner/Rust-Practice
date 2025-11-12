@@ -4,3 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+# for robust command-line argument parsing
+clap = { version = "4.5", features = ["derive"] }
+# For easy reading of data from CSV files
+csv = "1.3"
+# For statistical functions like mean, variance, etc.
+statrs = "0.17"
+#For additional computational abilities not specified earlier
+ndarray = "0.16"
+ndarray-stats = "0.6.0"
